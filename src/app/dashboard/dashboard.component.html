@@ -1,0 +1,9 @@
+<h3>Favorite Birds</h3>
+<div class="grid grid-pad">
+  <div *ngFor="let bird of birds" (click)="gotoDetail(bird)" class="col-1-4">
+    <div class="module bird">
+      <h4>{{bird.name}}</h4>
+    </div>
+  </div>
+</div>
+<app-bird-search></app-bird-search>
