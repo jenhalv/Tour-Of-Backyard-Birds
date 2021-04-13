@@ -9,7 +9,8 @@
   background-color: #dc4b38;
   color: white;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  font-family: 'RocknRoll One', sans-serif;
 }
 
 .toolbar img {
@@ -33,4 +34,13 @@ nav a:hover {
 }
 nav a.router-link-active {
   color: #039be5;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.header-bar {
+  letter-spacing: 7px;
+  font-size: 2em;
 }

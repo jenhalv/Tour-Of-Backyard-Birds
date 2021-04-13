@@ -16,9 +16,6 @@ import { InMemoryDataService } from './birds/in-memory-data.service';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatSidenavModule } from '@angular/material/sidenav';
-
 @NgModule({
   imports: [
     BrowserModule,
@@ -41,8 +38,6 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     BirdDetailsComponent,
     BirdSearchComponent,
     ToolbarComponent,
-    MatToolbarModule,
-    MatSidenavModule
   ],
   providers: [BirdService],
   bootstrap: [AppComponent]
