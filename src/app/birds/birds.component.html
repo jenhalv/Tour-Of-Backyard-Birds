@@ -21,24 +21,3 @@
   </h2>
   <button (click)="gotoDetail()">View Details</button>
 </div>
-
-<div>
-  <style>
-    .hidden { visibility: hidden}
-  </style>
-  <h4>ngFor Features</h4>
-  <button (click)="showNgFor=!showNgFor">{{showNgFor ? 'Hide' : 'Show'}} ngFor Features</button>
-  <table [class.hidden]="!showNgFor">
-    <tbody>
-      <tr *ngFor="let bird of birds; let ix = index; let c = count; let e = even; let o = odd; let f = first; let l = last">
-        <td>{{bird.name}}</td>
-        <td>{{ix}}</td>
-        <td>{{c}}</td>
-        <td>{{e}}</td>
-        <td>{{o}}</td>
-        <td>{{f}}</td>
-        <td>{{l}}</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
