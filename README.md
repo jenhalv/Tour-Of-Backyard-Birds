@@ -5,13 +5,8 @@ This application is a spin off of John Papa's Tour of Heroes: https://github.com
 - 👋 Hi, I’m @jenhalv -- Jennifer Halvorson
 - 👀 I’m interested in ... pecan farming, reading, and CODING!
 - 🌱 I’m currently learning ... angular, Angular, ANGULAR.
-- 📫 Fine me on Twitter @jennlynnhalv<a href="https://twitter.com/jennlynnhalv" class="fa fa-twitter" style="color: #b00017;" aria-hidden="true" alt="twitter"></a>
-    or email me at jenhalv06@gmail.com<a href="mailto:jenhalv06@gmail.com" class="fa fa-envelope" style="color: #b00017;"
-  color: white;aria-hidden="true" alt="envelope"></a>
-    <hr>
-    <br>
-    
-    
+- 📫 How to reach me ... https://twitter.com/jennlynnhalv  or email me at jenhalv06@gmail.com
+
 # TourOfBackyardBirds
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
