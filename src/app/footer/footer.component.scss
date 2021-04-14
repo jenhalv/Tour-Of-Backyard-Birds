@@ -1,7 +1,7 @@
 footer {
   display: flex;
   justify-content: center;
-  background: #dc4b38;
+  background: #b00017;
   color: white;
   font-size: 12px;
   width: 100%;
@@ -17,6 +17,10 @@ footer {
   text-decoration: none;
   color: white;
 }
+
+.fa-twitter {
+    padding: 15px;
+  }
 
 .fa:hover {
   color: #CCC;

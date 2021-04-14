@@ -6,7 +6,7 @@
   text-align: left;
   display: flex;
   align-items: center;
-  background-color: #dc4b38;
+  background-color: #b00017 ;
   color: white;
   padding: 10px 0px;
 }
@@ -44,17 +44,17 @@ a {
   color: white;
   margin-right: 9px;
   font-size: 25px;
-  padding: 0px 5px;
+  padding: 5px 10px;
+  border-radius: 4px;
 }
 
 a:hover {
-  color: #dc4b38;
-  background-color: #c9b5ae;
+  background-color: #acaaa9;
   cursor: pointer;
 }
 
 a.active {
-  background-color: #c9b5ae;
+  background-color: #acaaa9;
   cursor: context-menu;
   color: white;
 }

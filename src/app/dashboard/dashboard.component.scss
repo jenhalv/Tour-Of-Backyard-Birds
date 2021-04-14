@@ -25,7 +25,7 @@ a {
   float: right;
 }
   a:hover {
-  color: #dc4b38;
+  color: #b00017;
 }
 
 .grid {
@@ -44,14 +44,13 @@ a {
 
 .module {
 	color: white;
-  background-color: #607D8B;
+  background-color: #acaaa9;
   margin: 10px;
 }
 
 .module:hover {
-  background-color: #CCC;
+  background-color: #b00017;
   cursor: pointer;
-  color: #607d8b;
   transform: translateY(-0.25rem);
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
@@ -62,15 +61,7 @@ a {
   width: 100%;
 }
 }
-@media (max-width: 500px) {
-.grid {
-  display: block;
-}
-.grid img {
-  max-height: 150px;
-  padding: 5px 5px 0px 5px;
-  }
-}
+
 @media (max-width: 400px) {
 	.module {
 	  font-size: 15px;

@@ -6,6 +6,9 @@
     You can watch your favorite birds at home by establishing bird-feeding stations, supplying water throughout the year, and planting certain vegetation. Native trees, shrubs, vines, and flowers not only produce food for birds, they also provide cover. <br>
     <a target="_blank" href="https://mdc.mo.gov/property/improve-my-property/wildlife-management/backyard-birds">~ Missouri Department of Conservation</a></h3>
 </div>
+<!-- <div>
+    <app-bird-search></app-bird-search>
+  </div> -->
 
 <div class="grid">
   <div *ngFor="let bird of birds" (click)="gotoDetail(bird)" class="module bird">
@@ -13,4 +16,3 @@
       <p>{{bird.name}}</p>
   </div>
 </div>
-<!-- <app-bird-search></app-bird-search> -->

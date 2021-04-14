@@ -8,7 +8,7 @@ div {
   display: inline-block;
   width: 3em;
   margin: .5em 0;
-  color: #dc4b38;
+  color: #b00017;
 }
 
 img {
@@ -24,7 +24,7 @@ input {
 button {
   color:  white;
   letter-spacing: 1px;
-  background-color: #dc4b38;
+  background-color: #b00017;
   border: none;
   padding: 10px;
   border-radius: 4px;
@@ -35,11 +35,11 @@ button {
 
 button:hover {
   background-color: #c9b5ae;
-  color: #dc4b38;
+  color: #b00017;
 }
 
 button:disabled {
-  background-color: #dc4b38;
+  background-color: #b00017;
   color: white;
   cursor: auto;
 }

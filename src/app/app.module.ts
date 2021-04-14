@@ -37,7 +37,6 @@ import { FooterComponent } from './footer/footer.component';
     BirdDetailsComponent,
     BirdsComponent,
     BirdDetailsComponent,
-    BirdSearchComponent,
     ToolbarComponent,
     FooterComponent,
   ],

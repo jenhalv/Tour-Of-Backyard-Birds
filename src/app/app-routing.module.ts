@@ -6,10 +6,23 @@ import { BirdDetailsComponent } from './birds/bird-details/bird-details.componen
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
-  { path: 'dashboard', component: DashboardComponent },
-  { path: 'detail/:id', component: BirdDetailsComponent },
-  { path: 'birds', component: BirdsComponent }
+  {
+    path: '',
+    redirectTo: 'dashboard',
+    pathMatch: 'full'
+  },
+  {
+    path: 'dashboard',
+    component: DashboardComponent
+  },
+  {
+    path: 'detail/:id',
+    component: BirdDetailsComponent
+  },
+  {
+    path: 'birds',
+    component: BirdsComponent
+  }
 ];
 
 @NgModule({
