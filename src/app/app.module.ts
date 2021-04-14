@@ -15,6 +15,7 @@ import { BirdService } from './birds/bird.service';
 import { InMemoryDataService } from './birds/in-memory-data.service';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   imports: [
@@ -38,6 +39,7 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
     BirdDetailsComponent,
     BirdSearchComponent,
     ToolbarComponent,
+    FooterComponent,
   ],
   providers: [BirdService],
   bootstrap: [AppComponent]

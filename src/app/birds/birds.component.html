@@ -1,23 +1,37 @@
-<h2>Backyard Birds of Missouri</h2>
-
 <ul class="birds">
+  <li *ngFor="let bird of birds">
+    <span class="left">
+        <img [src]="bird.image" [alt]="bird.imageAlt"/>
+      <!-- <span class="badge">{{bird.id}}</span>  -->
+      <p>{{bird.name}}</p>
+    </span>
+    <span class="right">
+    <button class="delete-button" (click)="deleteBird(bird, $event)">Delete</button>
+  <button class="view-button"(click)="gotoDetail(bird)">View Details</button>
+</span>
+  </li>
+</ul>
+
+<!-- <ul class="birds">
   <li *ngFor="let bird of birds" (click)="onSelect(bird)" [class.selected]="bird === selectedBird">
     <span class="bird-element">
       <span class="badge">{{bird.id}}</span> {{bird.name}}
     </span>
     <button class="delete-button" (click)="deleteBird(bird, $event)">Delete</button>
+  <button (click)="gotoDetail()">View Details</button>
   </li>
-</ul>
+</ul> -->
 
-<div class="error" *ngIf="error">{{error}}</div>
+
+<!-- <div class="error" *ngIf="error">{{error}}</div>
 <button (click)="addBird()">Add New Bird</button>
 <div *ngIf="addingBird">
   <bird-detail (close)="close($event)"></bird-detail>
-</div>
-
+</div> -->
+<!--
 <div *ngIf="selectedBird">
   <h2>
     {{selectedBird.name | uppercase}}
   </h2>
   <button (click)="gotoDetail()">View Details</button>
-</div>
+</div> -->

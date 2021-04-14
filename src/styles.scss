@@ -1,5 +1,5 @@
 body {
-  margin: 2em;
+  margin:0px;
 }
 
 body, input[type="text"], button {
@@ -7,5 +7,8 @@ body, input[type="text"], button {
   font-family: 'RocknRoll One', sans-serif;
 }
 
-
+// Fonts
+@import 'https://fonts.googleapis.com/css?family=Material+Icons';
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined");;
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=RocknRoll+One&display=swap');

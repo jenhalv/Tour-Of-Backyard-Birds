@@ -60,7 +60,8 @@ export class BirdsComponent implements OnInit {
     this.addingBird = false;
   }
 
-  gotoDetail(): void {
-    this.router.navigate(['/detail', this.selectedBird.id]);
+  gotoDetail(bird: Bird): void {
+    const link = ['/detail', bird.id];
+    this.router.navigate(link);
   }
 }

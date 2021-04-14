@@ -24,7 +24,7 @@ export class DashboardComponent implements OnInit {
   }
 
   gotoDetail(bird: Bird): void {
-    const link = ['/detail', bird.name];
+    const link = ['/detail', bird.id];
     this.router.navigate(link);
   }
 }
