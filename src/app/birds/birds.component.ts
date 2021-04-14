@@ -26,7 +26,7 @@ export class BirdsComponent implements OnInit {
       .subscribe(
         birds => (this.birds = birds),
         error => (this.error = error)
-      )
+      );
   }
 
   addBird(): void {

@@ -1,5 +1,7 @@
 div {
-  margin-top: 75px;
+  margin: 75px auto 15px auto;
+  max-width: 600px;
+  position: relative;
 }
 
   label {
@@ -8,25 +10,48 @@ div {
   margin: .5em 0;
   color: #dc4b38;
 }
+
+img {
+  max-width: 400px;
+}
+
 input {
   height: 2em;
   font-size: 1em;
   padding-left: .4em;
 }
+
 button {
-  margin-top: 20px;
-  font-family: Arial;
-  background-color: #eee;
+  color:  white;
+  letter-spacing: 1px;
+  background-color: #dc4b38;
   border: none;
-  padding: 5px 10px;
+  padding: 10px;
   border-radius: 4px;
-  cursor: pointer; cursor: hand;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
 }
+
 button:hover {
-  background-color: #cfd8dc;
+  background-color: #c9b5ae;
+  color: #dc4b38;
 }
+
 button:disabled {
-  background-color: #eee;
-  color: #ccc;
+  background-color: #dc4b38;
+  color: white;
   cursor: auto;
+}
+
+@media (max-width: 350px) {
+div {
+  margin-top: 100px;
+}
+img {
+  max-width: 220px;
+}
+button {
+  position: revert;
+}
 }
