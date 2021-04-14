@@ -20,11 +20,11 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
     this.birdService.getBirds()
-      .subscribe(birds => this.birds = birds.slice(1, 5));
+      .subscribe(birds => this.birds = birds);
   }
 
   gotoDetail(bird: Bird): void {
-    const link = ['/detail', bird.id];
+    const link = ['/detail', bird.name];
     this.router.navigate(link);
   }
 }
