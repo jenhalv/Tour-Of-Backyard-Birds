@@ -6,14 +6,17 @@
 
 <ul class="birds">
   <li *ngFor="let bird of birds">
-    <span class="left">
-        <img [src]="bird.image" [alt]="bird.imageAlt"/>
-      <!-- <span class="badge">{{bird.id}}</span>  -->
-      <p>{{bird.name}}</p>
-    </span>
-    <span class="right">
-    <button class="delete-button" (click)="deleteBird(bird, $event)">Delete</button>
+        <img [src]="bird.art" [alt]="bird.imageAlt"/>
+        <!-- <img [src]="bird.image" [alt]="bird.imageAlt"/>
+      <span class="badge">{{bird.id}}</span>  -->
+      <span class="right"> <p>{{bird.name}}</p>
+    <button class="delete-button" style="margin-right: 0px;" (click)="deleteBird(bird, $event)">Delete</button>
   <button class="view-button"(click)="gotoDetail(bird)">View Details</button>
 </span>
   </li>
 </ul>
+
+<!-- <div class="header">
+    <p style="font-size:small; text-align: left;">
+        Disclaimer: Some of the infomation on this website is the <a target="_blank" href="https://mdc.mo.gov/property/improve-my-property/wildlife-management/backyard-birds">Missouri Department of Conservation</a> website.  The use of this content is only to provide an example of an Angular Application. It is not my intention to use MDC's content in any other way. ~ Jennifer Halvorson</p>
+  </div> -->
