@@ -8,6 +8,10 @@ body, input[type="text"], button {
   padding: 7px;
 }
 
+:hover {
+  transition: background-color .5s;
+}
+
 // Fonts
 @import 'https://fonts.googleapis.com/css?family=Material+Icons';
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined");;

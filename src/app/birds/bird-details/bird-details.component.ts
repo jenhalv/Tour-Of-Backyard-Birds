@@ -2,7 +2,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Bird } from '../bird';
 import { BirdService } from '../bird.service';
-import {FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-bird-details',
@@ -16,6 +16,9 @@ export class BirdDetailsComponent implements OnInit {
   error: any;
   filterName: string;
   navigated = false; // true if navigated here
+  renameBird: any;
+  name = new FormControl('id');
+
 
   constructor(
     private birdService: BirdService,
@@ -24,8 +27,8 @@ export class BirdDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.params.forEach((params: Params) => {
-      if (params['id'] !== undefined) {
-        const id = +params['id'];
+      if (params.id !== undefined) {
+        const id = +params.id;
         this.navigated = true;
         this.birdService.getBird(id).subscribe(bird => (this.bird = bird));
       } else {
@@ -38,7 +41,7 @@ export class BirdDetailsComponent implements OnInit {
   save(): void {
     this.birdService.save(this.bird).subscribe(bird => {
       this.bird = bird; // saved bird, w/ id IF NEW
-      this.goBack(bird);
+      this.refresh();
     }, error => (this.error = error)); // TODO: Display error message ??
   }
 
@@ -49,13 +52,24 @@ export class BirdDetailsComponent implements OnInit {
     }
   }
 
-clear(): void {
-this.bird.name = '';
-}
-
-reset(bird: Bird): void {
-  this.bird.name = 'bird.name';
-  console.log(this.bird.name);
+updateName(): void{
+  this.name.setValue(this.bird.original);
+  this.birdService.save(this.bird).subscribe(bird => {
+    this.bird = bird;
+    this.refresh();
+    }, error => (this.error = error)); // TODO: Display error message ??
   }
 
+  refresh(): void {
+    this.route.params.forEach((params: Params) => {
+          const id = +params.id;
+          this.navigated = true;
+          this.birdService.getBird(id).subscribe(bird => (this.bird = bird));
+        }
+      );
+    }
+
+clear(): void {
+  this.name.setValue('');
+  }
 }

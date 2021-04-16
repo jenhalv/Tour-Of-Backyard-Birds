@@ -6,15 +6,55 @@
   text-align: left;
   display: flex;
   align-items: center;
-  background-color: #b00017 ;
+  background-color: #b00017;
   color: white;
   padding: 10px 0px;
 }
 
-.left {
-  float: left;
-  display: flex;
+// .left {
+//   float: left;
+//   display: flex;
+// }
+
+a {
+  text-decoration: none;
+  color: white;
+  margin-right: 15px;
+  font-size: 25px;
+  padding: 5px 10px;
+  border-radius: 4px;
 }
+
+.home {
+  display: flex;
+  float: left;
+  background-color: #b00017;
+}
+
+.home:active {
+  background-color: #b00017;
+  cursor: context-menu;
+}
+
+.home:focus {
+  background-color: #b00017;
+  cursor: context-menu;
+}
+
+.navigation {
+  background-color: #b00017;
+}
+
+.navigation:hover {
+  background-color: #acaaa9;
+  cursor: pointer;
+}
+
+.navigation:active, .navigation:focus {
+  background-color: #acaaa9;
+  cursor: context-menu;
+}
+
 .right {
   float: right;
   display: flex;
@@ -37,26 +77,6 @@
   z-index: 100;
   background: fixed;
   z-index: 1000;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-  margin-right: 9px;
-  font-size: 25px;
-  padding: 5px 10px;
-  border-radius: 4px;
-}
-
-a:hover {
-  background-color: #acaaa9;
-  cursor: pointer;
-}
-
-a.active {
-  background-color: #acaaa9;
-  cursor: context-menu;
-  color: white;
 }
 
 p {
@@ -84,7 +104,7 @@ p {
     font-size: 15px;
   }
   .toolbar img {
-    margin: 0px 5px 0px 10px;
+    margin: 0px 5px 0px 0px;
   }
   .right {
     display: block;

@@ -1,16 +1,22 @@
 <div class="toolbar" role="banner">
-<div class="left">
-    <img
-      width="40"
-      alt="Tour of Backyard Birds Logo"
-      src="assets/Bird_white.png"
-    />
 
-    <p>Tour of Backyard Birds</p>
+  <div class="left">
+    <a class="home" routerLink="/home" routerLinkActive="active">
+      <img width="40" alt="Tour of Backyard Birds Logo" src="assets/Bird_white.png"/>
+      <p>Tour of Backyard Birds</p>
+    </a>
   </div>
-    <span class="spacer"></span>
-<div class="right">
-      <a class="navigation" routerLink="/dashboard" routerLinkActive="active">Home</a>
-      <a class="navigation" routerLink="/birds" routerLinkActive="active">Birds</a>
-    </div>
+
+  <span class="spacer"></span>
+
+  <div class="right">
+    <a class="navigation"
+        style="margin-right: 20px;"
+        routerLinkActive="active"
+        routerLink="/home">
+        Home</a>
+
+    <a class="navigation" routerLink="/birds">Birds</a>
+  </div>
+
 </div>

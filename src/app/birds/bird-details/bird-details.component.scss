@@ -32,7 +32,7 @@ input {
   height: 2em;
   font-size: 1em;
   padding: .4em;
-  max-width: 265px;
+  width: 290px;
   text-align: left;
   font-family: 'RocknRoll One', sans-serif;
 }
@@ -59,14 +59,36 @@ button:disabled {
   cursor: auto;
 }
 
+.reset {
+  line-height: 30px;
+  margin-left: 0px;
+  background-color: #215524;
+  color: white;
+}
+
+.reset:hover {
+  box-shadow:inset 0px 0px 0px 4px black;
+  background-color: white;
+  color: #215524;
+}
+
 @media (max-width: 368px) {
   div {
     margin-top: 95px;
+    }
+  input {
+      width: 190px;
     }
   }
 
 @media (max-width: 400px) {
   img {
     max-width: 280px;
+  }
+}
+
+@media (max-width: 300px) {
+  img {
+    max-width: 200px;
   }
 }

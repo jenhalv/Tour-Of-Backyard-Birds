@@ -1,42 +1,45 @@
 <div class="details" *ngIf="bird">
 
   <div>
-  <h2>{{bird.name}}</h2>
-<h3>{{bird.description}}</h3>
-
-  <img [src]="bird.image" [alt]="bird.imageAlt"/>
-</div>
+    <h2>{{bird.name}}</h2>
+    <h3>{{bird.description}}</h3>
+    <img [src]="bird.image" [alt]="bird.imageAlt"/>
+  </div>
 
   <div class="caption">
-  <p style="margin: 0px;">Photo by Jennifer Halvorson</p>
-  <button style="margin: 0px;" (click)="goBack()">Back</button>
+    <p style="margin: 0px;">Photo by Jennifer Halvorson</p>
+    <button style="margin: 0px;" (click)="goBack()">Back</button>
   </div>
 
 <br>
 <hr>
+
   <div class="info">
+
     <label>Bird #</label>{{bird.id}} / {{bird.name}}
-<br><br>
+
+    <br><br>
+
     <label>Rename this bird:</label><br>
 
-    <input
-    [(ngModel)]="bird.name"
+    <input type="text"
     id="bird.name"
     type="text"
     onfocus="this.value=''"
-    value="New name?"
-    placeholder="New name?"
-    />
+    value=""
+    placeholder=''
+    [formControl]="name"
+    [(ngModel)]="bird.name">
 
     <br>
 
-<button style="margin-left: 0px;" (click)="clear()">Clear</button>
-<!-- <button (click)="reset()">Reset</button> -->
+    <button style="margin-left: 0px;" (click)="clear()">Clear</button>
+    <button (click)="save()">Save</button>
+    <br>
 
+    <button class="reset" (click)="updateName()">Reset to Original Name:<br>{{ bird.original }}</button>
 
-  <button (click)="save()">Save</button>
   </div>
-
 
 </div>
 
