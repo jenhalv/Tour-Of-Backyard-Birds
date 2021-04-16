@@ -21,7 +21,7 @@ export class InMemoryDataService {
       {
         id: 3,
         name: 'Indigo Bunting',
-        description: 'The Indigo Bunting is a brilliant turquoise blue. I was so delighted to catch this guy one afternoon at my bird feeders.  They migrate to our western Missouri area from April - October and this was the first one I had ever seen.',
+        description: 'The Indigo Bunting is a brilliant turquoise blue. I was so delighted to catch this guy one afternoon at my bird feeders.  They migrate to our southwestern Missouri area from April - October and this was the first one I had ever seen.',
         image: 'assets/Bunting.jpg',
         art: 'assets/blue.png',
         imageAlt: 'Indigo Bunting',
@@ -37,7 +37,7 @@ export class InMemoryDataService {
       {
         id: 5,
         name: 'Pileated Woodpecker',
-        description: 'The Pileated Woodpecker is primarily black, with white highlights and a brilliant red crest. We have named our front yard resident, Frank the Tank.  This guy is so big!  He spends his afternoons going throught the small native pecans that were not picked up last season.',
+        description: 'The Pileated Woodpecker is primarily black, with white highlights and a brilliant red crest. We have named our front yard resident Frank the Tank.  This guy is so big!  He spends his afternoons going through the small native pecans that were not picked up last season.',
         image: 'assets/Frank.jpg',
         art: 'assets/PWP_CA.png',
         imageAlt: 'Pileated Woodpecker',

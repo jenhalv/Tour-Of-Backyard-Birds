@@ -1,16 +1,42 @@
-<div *ngIf="bird">
+<div class="details" *ngIf="bird">
+
+  <div>
   <h2>{{bird.name}}</h2>
 <h3>{{bird.description}}</h3>
-  <img [src]="bird.image" [alt]="bird.imageAlt"/>
-  <p>Photo by Jennifer Halvorson</p>
-  <!-- <div>
-    <label>id: </label>{{bird.id}}</div>
-  <div>
-    <label>name: </label>
-    <input [(ngModel)]="bird.name" placeholder="name" />
-  </div> -->
 
-  <button (click)="goBack()">Back</button>
+  <img [src]="bird.image" [alt]="bird.imageAlt"/>
 </div>
-  <!-- <button (click)="save()">Save</button> -->
+
+  <div class="caption">
+  <p style="margin: 0px;">Photo by Jennifer Halvorson</p>
+  <button style="margin: 0px;" (click)="goBack()">Back</button>
+  </div>
+
+<br>
+<hr>
+  <div class="info">
+    <label>Bird #</label>{{bird.id}} / {{bird.name}}
+<br><br>
+    <label>Rename this bird:</label><br>
+
+    <input
+    [(ngModel)]="bird.name"
+    id="bird.name"
+    type="text"
+    onfocus="this.value=''"
+    value="New name?"
+    placeholder="New name?"
+    />
+
+    <br>
+
+<button style="margin-left: 0px;" (click)="clear()">Clear</button>
+<!-- <button (click)="reset()">Reset</button> -->
+
+
+  <button (click)="save()">Save</button>
+  </div>
+
+
+</div>
 
