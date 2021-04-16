@@ -5,6 +5,7 @@ export class InMemoryDataService {
       {
         id: 1,
         name: 'Ruby-Throated Hummingbird',
+        original: 'Ruby-Throated Hummingbird',
         description: 'The Ruby-Throated Hummingbird is tiny!  It has a slender, slightly downcurved bill that is used to suck out sugary water from my feeders.  Their wings beat around 53 times per second and you can hear them buzzing on our farm from Mid-April through summer.  They head south before it gets too chilly around here and are sorely missed during the winter months.',
         image: 'assets/Hummingbird.jpg',
         art: 'assets/Hummingbird.png',
